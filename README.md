@@ -2,7 +2,7 @@
 
 A small web app that shows a Bhagavad Gita verse whenever you open or refresh the page: Sanskrit, an English rendering, the chapter and verse citation, a note for today, and a deeper meaning for ordinary life.
 
-Each refresh picks a new verse and avoids immediately repeating the last one. There is no account, database, or backend. On a phone, use Add to Home Screen to keep the page one tap away.
+The collection is the complete traditional recension — all 701 verses across 18 chapters (chapter 13 has 35 verses). Each refresh picks a new verse and avoids immediately repeating the last one. There is no account, database, or backend. On a phone, use Add to Home Screen to keep the page one tap away.
 
 Live GitHub Pages URL after Pages is enabled and the deploy workflow succeeds:
 
@@ -75,8 +75,8 @@ If assets 404, confirm the repository name is exactly `GitaVerseofDay` and that 
 
 ## How a verse is chosen
 
-Verses live in `data/verses.ts`. The app picks one at random in the browser after the page loads, and remembers the last verse in `localStorage` so a refresh does not show the same one twice in a row. Because GitHub Pages is a static host, there is no server-side daily lock.
+Verses live in `data/verses.ts` — the full Gita, not a short anthology. The app picks one at random in the browser after the page loads, and remembers the last verse in `localStorage` so a refresh does not show the same one twice in a row. Because GitHub Pages is a static host, there is no server-side daily lock.
 
 On a phone, open the browser share or menu and choose **Add to Home Screen** so the page sits next to your other apps.
 
-Sanskrit is the traditional public-domain Gita text. The English lines are original paraphrases written for this app, not a published translator’s edition.
+Sanskrit is the traditional public-domain Gita text. Fifty-seven well-known verses keep English notes written for this app. The rest of the English follows Shri Purohit Swami’s 1935 public-domain translation, lightly regularized. Context, “For today,” and deeper meaning on every verse are original. This is not a reprint of a modern copyrighted edition (Sivananda, Prabhupada, and similar).

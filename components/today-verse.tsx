@@ -97,8 +97,8 @@ function PageFrame({ children }: { children: ReactNode }) {
           A verse from the Bhagavad Gita
         </h1>
         <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base">
-          Refresh the page for another verse. Each one includes a note for today
-          and a deeper meaning for ordinary life.
+          Refresh for another of all 701 verses. Each one includes a note for
+          today and a deeper meaning for ordinary life.
         </p>
       </header>
       {children}
@@ -191,7 +191,8 @@ function LoadedVerse({ verse, openedAt }: { verse: GitaVerse; openedAt: Date }) 
         </div>
       </CardContent>
       <CardFooter className="text-muted-foreground">
-        A new verse on each refresh, from {verses.length} in the collection.
+        A new verse on each refresh, from all {verses.length} verses of the
+        Gita.
       </CardFooter>
     </Card>
   );
