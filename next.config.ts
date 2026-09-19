@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: isGithubPages ? `/${repoName}` : "",
+  allowedDevOrigins: ["127.0.0.1"],
 };
 
 export default nextConfig;
