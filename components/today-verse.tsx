@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useSyncExternalStore, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Copy, Check, RotateCcw } from "lucide-react";
 
 import { verses, type GitaVerse } from "@/data/verses";
@@ -26,11 +26,17 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { LotusMark } from "@/components/lotus-mark";
 
 export function TodayVerse() {
-  const today = useSyncExternalStore(
-    subscribeToLocalDate,
-    getLocalIsoDate,
-    () => null,
-  );
+  const [today, setToday] = useState<string | null>(null);
+
+  useEffect(() => {
+    const applyToday = () => setToday(getLocalIsoDate());
+    const timeoutId = window.setTimeout(applyToday, 0);
+    const unsubscribe = subscribeToLocalDate(applyToday);
+    return () => {
+      window.clearTimeout(timeoutId);
+      unsubscribe();
+    };
+  }, []);
 
   if (today === null) {
     return (
