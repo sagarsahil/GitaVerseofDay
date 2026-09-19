@@ -97,7 +97,7 @@ function PageFrame({ children }: { children: ReactNode }) {
           A verse from the Bhagavad Gita
         </h1>
         <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base">
-          Refresh for another of all 701 verses. Each one includes a note for
+          Refresh for another of all 700 verses. Each one includes a note for
           today and a deeper meaning for ordinary life.
         </p>
       </header>

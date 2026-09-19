@@ -2,7 +2,7 @@
 
 A small web app that shows a Bhagavad Gita verse whenever you open or refresh the page: Sanskrit, an English rendering, the chapter and verse citation, a note for today, and a deeper meaning for ordinary life.
 
-The collection is the complete traditional recension — all 701 verses across 18 chapters (chapter 13 has 35 verses). Each refresh picks a new verse and avoids immediately repeating the last one. There is no account, database, or backend. On a phone, use Add to Home Screen to keep the page one tap away.
+The collection is the complete Gita — all 700 verses across 18 chapters (chapter 13 has 34 verses). Each refresh picks a new verse and avoids immediately repeating the last one. There is no account, database, or backend. On a phone, use Add to Home Screen to keep the page one tap away.
 
 Live GitHub Pages URL after Pages is enabled and the deploy workflow succeeds:
 

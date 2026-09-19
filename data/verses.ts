@@ -4413,24 +4413,15 @@ export const verses: GitaVerse[] = [
   {
     chapter: 13,
     verse: 1,
-    sanskrit: "प्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च।\nएतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव॥",
-    translation: "Arjuna asked, \"My Lord, who is God, what is Nature, what is Matter, and what is the Self? What is Wisdom, and what is worth knowing? I wish to have this explained.\"",
-    context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on nature, matter, self.",
-    relevance: "Name nature honestly, then take the next useful step.",
-    meaning: "On a battlefield this line is about nature, matter, self. In a waiting room or a birthday, it is still about bodies change; dignity does not. You do not need a holier setting — you need a clearer hold on what is in front of you.",
-  },
-  {
-    chapter: 13,
-    verse: 2,
     sanskrit: "श्री भगवानुवाचइदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते।एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः॥",
-    translation: "Lord Krishna replied: O Arjuna! The body of a person is the playground of the Self; and That which knows the activities of Matter, sages call the Self.",
+    translation: "Lord Krishna said: O Arjuna! The body of a person is the playground of the Self; and That which knows the activities of Matter, sages call the Self.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on body, person, playground.",
     relevance: "Looking at a stranger as if they were scenery, notice body before you decide.",
     meaning: "This verse sits in the field and the knower, which is really about bodies change; dignity does not. Read it looking at a stranger as if they were scenery: body, person, playground is already in the room. Meet it there, then do the next kind, useful thing.",
   },
   {
     chapter: 13,
-    verse: 3,
+    verse: 2,
     sanskrit: "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत।\nक्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम॥",
     translation: "I am the omniscient Self that abides in the realm of matter; knowledge of matter and of the all-knowing Self is wisdom.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on omniscient, self, abides.",
@@ -4439,7 +4430,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 4,
+    verse: 3,
     sanskrit: "तत्क्षेत्रं यच्च यादृक् च यद्विकारि यतश्च यत्।स च यो यत्प्रभावश्च तत्समासेन मे श्रृणु॥",
     translation: "What is called Matter, of what it is composed, whence it came, and why it changes, what the Self is, and what its power - this I will now briefly set forth.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on called, matter, composed.",
@@ -4448,7 +4439,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 5,
+    verse: 4,
     sanskrit: "ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक्।ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्िचतैः॥",
     translation: "Seers have sung of it in various ways, in many hymns and sacred Vedic songs, weighty in thought and convincing in their arguments.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on seers, sung, various.",
@@ -4457,7 +4448,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 6,
+    verse: 5,
     sanskrit: "महाभूतान्यहङ्कारो बुद्धिरव्यक्तमेव च।इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः॥",
     translation: "The five great fundamentals—earth, fire, air, water, and ether—personality, intellect, the mysterious life force, the ten organs of perception and action, the mind, and the five domains of sensation—.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on five, fundamentals, earth.",
@@ -4466,7 +4457,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 7,
+    verse: 6,
     sanskrit: "इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः।एतत्क्षेत्रं समासेन सविकारमुदाहृतम्॥",
     translation: "Desire, aversion, pleasure, pain, sympathy, vitality, and the persistent clinging to life—these are, in brief, the constituents of changing matter.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on aversion, pleasure, pain.",
@@ -4475,7 +4466,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 8,
+    verse: 7,
     sanskrit: "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्।आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः॥",
     translation: "Humility, sincerity, harmlessness, forgiveness, rectitude, service to the Master, purity, steadfastness, and self-control;.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on humility, sincerity, harmlessness.",
@@ -4484,7 +4475,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 9,
+    verse: 8,
     sanskrit: "इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च।जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम्॥",
     translation: "Renouncing the delights of the senses, being without pride, having a right understanding of the painful problem of birth and death, and of age and sickness;.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on renouncing, delights, senses.",
@@ -4493,7 +4484,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 10,
+    verse: 9,
     sanskrit: "असक्ितरनभिष्वङ्गः पुत्रदारगृहादिषु।नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु॥",
     translation: "Indifference, non-attachment to sex, progeny, or home, equanimity in both good fortune and bad;.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on indifference, non-attachment, progeny.",
@@ -4502,7 +4493,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 11,
+    verse: 10,
     sanskrit: "मयि चानन्ययोगेन भक्ितरव्यभिचारिणी।विविक्तदेशसेवित्वमरतिर्जनसंसदि॥",
     translation: "Unswerving devotion to Me, with concentration on Me and Me alone, a love for solitude, and indifference to social life;.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on unswerving, devotion, concentration.",
@@ -4511,7 +4502,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 12,
+    verse: 11,
     sanskrit: "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम्।एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोन्यथा॥",
     translation: "Constant yearning for the knowledge of the Self, and pondering over the lessons of the great Truth—this is wisdom; all else is ignorance.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on constant, yearning, knowledge.",
@@ -4520,7 +4511,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 13,
+    verse: 12,
     sanskrit: "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वाऽमृतमश्नुते।अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते॥",
     translation: "I will now speak to you of that great truth which one ought to know, since by it one will attain immortal bliss—that which is without beginning, the eternal spirit which dwells in me, neither with form nor without it.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on speak, truth, ought.",
@@ -4529,7 +4520,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 14,
+    verse: 13,
     sanskrit: "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम्।सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति॥",
     translation: "Everywhere are Its hands and feet; everywhere It has eyes that see, heads that think, and mouths that speak; everywhere It listens; It dwells in all the worlds and envelops them all.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on everywhere, hands, feet.",
@@ -4538,7 +4529,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 15,
+    verse: 14,
     sanskrit: "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम्।असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च॥",
     translation: "Beyond the senses, it yet shines through every sense perception; bound to nothing, it yet sustains everything; unaffected by the qualities, it still enjoys them all.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on beyond, senses, shines.",
@@ -4547,7 +4538,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 16,
+    verse: 15,
     sanskrit: "बहिरन्तश्च भूतानामचरं चरमेव च।सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत्॥",
     translation: "It is within all beings, yet outside; motionless yet moving; too subtle to be perceived; far away yet ever near.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on within, beings, outside.",
@@ -4556,7 +4547,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 17,
+    verse: 16,
     sanskrit: "अविभक्तं च भूतेषु विभक्तमिव च स्थितम्।भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च॥",
     translation: "In all beings, undivided yet living in division, it is the upholder of all, both creator and destroyer alike.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on beings, undivided, living.",
@@ -4565,7 +4556,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 18,
+    verse: 17,
     sanskrit: "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते।ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम्॥",
     translation: "It is the light of lights, beyond the reach of darkness; the wisdom, the only thing worth knowing or that wisdom can teach; the presence in the hearts of all.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on light, lights, beyond.",
@@ -4574,7 +4565,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 19,
+    verse: 18,
     sanskrit: "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः।मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते॥",
     translation: "Thus, I have briefly told you what Matter is, the Self worth realizing, and what Wisdom is. He who is devoted to Me knows, and he will assuredly enter into Me.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on briefly, matter, self.",
@@ -4583,7 +4574,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 20,
+    verse: 19,
     sanskrit: "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि।विकारांश्च गुणांश्चैव विद्धि प्रकृतिसंभवान्॥",
     translation: "Know further that Nature and God have no beginning, and that differences in character and quality originate from Nature only.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on know, further, nature.",
@@ -4592,7 +4583,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 21,
+    verse: 20,
     sanskrit: "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते।पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते॥",
     translation: "Nature is the law that generates cause and effect; God is the source of all pleasure and pain.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on nature, generates, cause.",
@@ -4601,7 +4592,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 22,
+    verse: 21,
     sanskrit: "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान्।कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु॥",
     translation: "God, dwelling in the heart of Nature, experiences the qualities that Nature brings forth; and His affinity towards these qualities is the reason for His living in a good or evil body.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on dwelling, heart, nature.",
@@ -4610,7 +4601,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 23,
+    verse: 22,
     sanskrit: "उपद्रष्टाऽनुमन्ता च भर्ता भोक्ता महेश्वरः।परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः॥",
     translation: "Thus, in the body of man dwells the Supreme God; He who sees, permits, upholds, and enjoys is the Highest God and the Highest Self.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on body, dwells, supreme.",
@@ -4619,7 +4610,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 24,
+    verse: 23,
     sanskrit: "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैःसह।सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते॥",
     translation: "He who understands God and Nature, along with her qualities, whatever his condition in life may be, will not come back to earth.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on understands, nature, along.",
@@ -4628,7 +4619,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 25,
+    verse: 24,
     sanskrit: "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना।अन्ये सांख्येन योगेन कर्मयोगेन चापरे॥",
     translation: "Some realize the Supreme by meditating, with its aid, on the Self within; others by pure reason; and still others by right action.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on some, realize, supreme.",
@@ -4637,7 +4628,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 26,
+    verse: 25,
     sanskrit: "अन्ये त्वेवमजानन्तः श्रुत्वाऽन्येभ्य उपासते।तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः॥",
     translation: "Others, again, having no direct knowledge but only hearing from others, still worship, and, if they are true to the teachings, they too will cross the sea of death.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on others, again, direct.",
@@ -4646,7 +4637,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 27,
+    verse: 26,
     sanskrit: "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम्।क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ॥",
     translation: "Wherever life is seen in things movable or immovable, it is the result of the combination of Matter and Spirit.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on wherever, life, seen.",
@@ -4655,7 +4646,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 28,
+    verse: 27,
     sanskrit: "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्।\nविनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति॥",
     translation: "The one who sees the supreme Lord standing equally in all beings, the one who does not perish when they perish — that one truly sees.",
     context: "Chapter 13 distinguishes the field from the knower of the field. Equal seeing is the fruit of that distinction: bodies change, the Lord in them does not.",
@@ -4664,7 +4655,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 29,
+    verse: 28,
     sanskrit: "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम्।न हिनस्त्यात्मनाऽऽत्मानं ततो याति परां गतिम्॥",
     translation: "Beholding the Lord equally in all things, his actions do not mar his spiritual life but lead him to the heights of bliss.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on beholding, equally, things.",
@@ -4673,7 +4664,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 30,
+    verse: 29,
     sanskrit: "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः।यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति॥",
     translation: "He who understands that it is only the Law of Nature that brings action to fruition, and that the Self never acts, alone knows the Truth.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on understands, nature, brings.",
@@ -4682,7 +4673,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 31,
+    verse: 30,
     sanskrit: "यदा भूतपृथग्भावमेकस्थमनुपश्यति।तत एव च विस्तारं ब्रह्म सम्पद्यते तदा॥",
     translation: "He who sees the diverse forms of life all rooted in One and growing forth from Him, shall indeed find the Absolute.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on sees, diverse, forms.",
@@ -4691,7 +4682,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 32,
+    verse: 31,
     sanskrit: "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः।शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते॥",
     translation: "The Supreme Spirit, O Prince, is without beginning, has no qualities, and is imperishable. Though it is within the body, it does not act, nor is it affected by action.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on supreme, spirit, without.",
@@ -4700,7 +4691,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 33,
+    verse: 32,
     sanskrit: "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते।सर्वत्रावस्थितो देहे तथाऽऽत्मा नोपलिप्यते॥",
     translation: "As space, though present everywhere, remains unaffected due to its subtlety, so too the Self, though present in all forms, retains its purity unalloyed.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on space, though, present.",
@@ -4709,7 +4700,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 34,
+    verse: 33,
     sanskrit: "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः।क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत॥",
     translation: "As the one Sun illuminates the entire earth, so the Lord illuminates the entire universe.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on illuminates, entire, earth.",
@@ -4718,7 +4709,7 @@ export const verses: GitaVerse[] = [
   },
   {
     chapter: 13,
-    verse: 35,
+    verse: 34,
     sanskrit: "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा।भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम्॥",
     translation: "Those who, with the eyes of wisdom, thus see the difference between Matter and Spirit, and know how to liberate life from the Law of Nature, attain the Supreme.",
     context: "Chapter 13 distinguishes the field (the body and world) from the one who knows it. Equal seeing is the fruit. Here the line turns on eyes, wisdom, difference.",
