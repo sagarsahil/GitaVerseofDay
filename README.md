@@ -1,8 +1,8 @@
 # Gita Verse of the Day
 
-A small web app that shows one Bhagavad Gita verse each calendar day: Sanskrit, an English rendering, the chapter and verse citation, and a short context note.
+A small web app that shows a Bhagavad Gita verse whenever you open or refresh the page: Sanskrit, an English rendering, the chapter and verse citation, a note for today, and a deeper meaning for ordinary life.
 
-The verse is chosen from a bundled collection by local calendar day, so the same date always shows the same verse. There is no account, database, or backend.
+Each refresh picks a new verse and avoids immediately repeating the last one. There is no account, database, or backend. On a phone, use Add to Home Screen to keep the page one tap away.
 
 Live GitHub Pages URL after Pages is enabled and the deploy workflow succeeds:
 
@@ -73,8 +73,8 @@ After the first successful deploy, the site is at:
 
 If assets 404, confirm the repository name is exactly `GitaVerseofDay` and that Pages is using GitHub Actions rather than a `/docs` folder.
 
-## How the daily verse works
+## How a verse is chosen
 
-Verses live in `data/verses.ts`. The app picks one with the local day of year, so 1 January is the first verse, and the collection then cycles. Because GitHub Pages is a static host, the date is resolved in the browser after the page loads.
+Verses live in `data/verses.ts`. The app picks one at random in the browser after the page loads, and remembers the last verse in `localStorage` so a refresh does not show the same one twice in a row. Because GitHub Pages is a static host, there is no server-side daily lock.
 
 Sanskrit is the traditional public-domain Gita text. The English lines are original paraphrases written for this app, not a published translator’s edition.

@@ -7,11 +7,12 @@ import { verses, type GitaVerse } from "@/data/verses";
 import {
   citation,
   formatDisplayDate,
-  getLocalIsoDate,
-  parseLocalIsoDate,
-  pickVerseForDate,
-  subscribeToLocalDate,
+  pickFreshVerse,
+  readLastVerseId,
+  verseId,
+  writeLastVerseId,
 } from "@/lib/pick-verse";
+import { BookmarkOnPhone } from "@/components/bookmark-on-phone";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -25,20 +26,35 @@ import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
 import { LotusMark } from "@/components/lotus-mark";
 
+type Status = "loading" | "ready" | "empty" | "error";
+
 export function TodayVerse() {
-  const [today, setToday] = useState<string | null>(null);
+  const [status, setStatus] = useState<Status>("loading");
+  const [verse, setVerse] = useState<GitaVerse | null>(null);
+  const [openedAt, setOpenedAt] = useState<Date | null>(null);
 
   useEffect(() => {
-    const applyToday = () => setToday(getLocalIsoDate());
-    const timeoutId = window.setTimeout(applyToday, 0);
-    const unsubscribe = subscribeToLocalDate(applyToday);
-    return () => {
-      window.clearTimeout(timeoutId);
-      unsubscribe();
-    };
+    const timeoutId = window.setTimeout(() => {
+      try {
+        if (verses.length === 0) {
+          setVerse(null);
+          setStatus("empty");
+          return;
+        }
+        const next = pickFreshVerse(verses, readLastVerseId());
+        writeLastVerseId(verseId(next));
+        setVerse(next);
+        setOpenedAt(new Date());
+        setStatus("ready");
+      } catch {
+        setVerse(null);
+        setStatus("error");
+      }
+    }, 0);
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
-  if (today === null) {
+  if (status === "loading") {
     return (
       <PageFrame>
         <VerseSkeleton />
@@ -46,7 +62,7 @@ export function TodayVerse() {
     );
   }
 
-  if (verses.length === 0) {
+  if (status === "empty") {
     return (
       <PageFrame>
         <EmptyState />
@@ -54,17 +70,7 @@ export function TodayVerse() {
     );
   }
 
-  const date = parseLocalIsoDate(today);
-  let verse: GitaVerse | null = null;
-  let loadError = false;
-
-  try {
-    verse = pickVerseForDate(verses, date);
-  } catch {
-    loadError = true;
-  }
-
-  if (loadError || !verse) {
+  if (status === "error" || !verse || !openedAt) {
     return (
       <PageFrame>
         <ErrorState />
@@ -74,7 +80,7 @@ export function TodayVerse() {
 
   return (
     <PageFrame>
-      <LoadedVerse verse={verse} date={date} />
+      <LoadedVerse verse={verse} openedAt={openedAt} />
     </PageFrame>
   );
 }
@@ -88,20 +94,20 @@ function PageFrame({ children }: { children: ReactNode }) {
           Gita Verse of the Day
         </p>
         <h1 className="font-heading mt-3 max-w-md text-3xl leading-tight text-balance text-foreground drop-shadow-[0_1px_18px_oklch(0.98_0.01_88)] sm:text-4xl">
-          A verse from the Bhagavad Gita, chosen for today
+          A verse from the Bhagavad Gita
         </h1>
         <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base">
-          The same calendar day always returns the same verse. Open the page
-          tomorrow for the next one in the collection. Each verse includes a
-          note for today and a deeper meaning.
+          Refresh the page for another verse. Each one includes a note for today
+          and a deeper meaning for ordinary life.
         </p>
       </header>
       {children}
+      <BookmarkOnPhone />
     </div>
   );
 }
 
-function LoadedVerse({ verse, date }: { verse: GitaVerse; date: Date }) {
+function LoadedVerse({ verse, openedAt }: { verse: GitaVerse; openedAt: Date }) {
   const [copied, setCopied] = useState(false);
   const [copyError, setCopyError] = useState(false);
 
@@ -135,7 +141,7 @@ function LoadedVerse({ verse, date }: { verse: GitaVerse; date: Date }) {
         <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <p className="text-xs font-medium tracking-[0.2em] text-primary uppercase">
-              {formatDisplayDate(date)}
+              {formatDisplayDate(openedAt)}
             </p>
             <CardTitle className="mt-2 font-heading text-2xl">
               {citation(verse)}
@@ -171,10 +177,9 @@ function LoadedVerse({ verse, date }: { verse: GitaVerse; date: Date }) {
           {verse.translation}
         </p>
         <Separator />
-        <div className="grid gap-6 sm:grid-cols-2 sm:gap-8">
-          <VerseNote title="For today" body={verse.relevance} />
-          <VerseNote title="Deeper meaning" body={verse.meaning} />
-        </div>
+        <VerseNote title="For today" body={verse.relevance} />
+        <Separator />
+        <VerseNote title="Deeper meaning" body={verse.meaning} />
         <Separator />
         <div>
           <h2 className="text-xs font-medium tracking-[0.2em] text-primary uppercase">
@@ -186,7 +191,7 @@ function LoadedVerse({ verse, date }: { verse: GitaVerse; date: Date }) {
         </div>
       </CardContent>
       <CardFooter className="text-muted-foreground">
-        Selected from {verses.length} verses by local calendar day.
+        A new verse on each refresh, from {verses.length} in the collection.
       </CardFooter>
     </Card>
   );
@@ -221,22 +226,15 @@ function VerseSkeleton() {
           <Skeleton className="h-6 w-5/6" />
         </div>
         <Skeleton className="h-px w-full" />
-        <div className="grid gap-6 sm:grid-cols-2">
-          <div className="space-y-2">
-            <Skeleton className="h-3 w-20" />
-            <Skeleton className="h-4 w-full" />
-            <Skeleton className="h-4 w-4/5" />
-          </div>
-          <div className="space-y-2">
-            <Skeleton className="h-3 w-28" />
-            <Skeleton className="h-4 w-full" />
-            <Skeleton className="h-4 w-3/4" />
-          </div>
-        </div>
-        <Skeleton className="h-px w-full" />
         <div className="space-y-2">
           <Skeleton className="h-3 w-20" />
           <Skeleton className="h-4 w-full" />
+        </div>
+        <Skeleton className="h-px w-full" />
+        <div className="space-y-2">
+          <Skeleton className="h-3 w-28" />
+          <Skeleton className="h-4 w-full" />
+          <Skeleton className="h-4 w-5/6" />
           <Skeleton className="h-4 w-4/5" />
         </div>
       </CardContent>
@@ -250,7 +248,7 @@ function EmptyState() {
       <CardHeader>
         <CardTitle className="font-heading text-2xl">No verses yet</CardTitle>
         <CardDescription>
-          The collection is empty, so there is nothing to show for today.
+          The collection is empty, so there is nothing to show.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -268,10 +266,10 @@ function ErrorState() {
     <Card className="border-none bg-card/95 ring-1 ring-primary/15 backdrop-blur-md">
       <CardHeader>
         <CardTitle className="font-heading text-2xl">
-          Today&apos;s verse could not be loaded
+          A verse could not be loaded
         </CardTitle>
         <CardDescription>
-          Something went wrong while choosing the verse for this date.
+          Something went wrong while choosing a verse.
         </CardDescription>
       </CardHeader>
       <CardContent>

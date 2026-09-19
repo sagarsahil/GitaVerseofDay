@@ -30,7 +30,12 @@ const devanagari = Noto_Serif_Devanagari({
 export const metadata: Metadata = {
   title: "Gita Verse of the Day",
   description:
-    "A daily Bhagavad Gita verse with Sanskrit, English translation, and a short reading for today.",
+    "A Bhagavad Gita verse with Sanskrit, English translation, and a short reading for this moment.",
+  appleWebApp: {
+    capable: true,
+    title: "Gita Verse",
+    statusBarStyle: "default",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

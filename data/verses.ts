@@ -21,7 +21,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Begin the day by naming the real question, not the noise around it.",
     meaning:
-      "The Gita opens in not-knowing. Sight starts when we admit we are asking from the side, not from the field.",
+      "Before a hard conversation or a messy family argument, we often ask everyone else what happened instead of looking at our own part. The first move in a conflict is to admit you are not seeing the whole field. Ask a clearer question before you pick a side.",
   },
   {
     chapter: 1,
@@ -35,7 +35,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "If something in you sat down today, do not fake a stand. Name the overwhelm first.",
     meaning:
-      "Collapse is not the end of courage. It is the moment old certainty fails and a true teaching can begin.",
+      "There are days at work or at home when your usual competence just sits down. That is not failure; it is the body saying the old plan will not hold. Name the overwhelm to someone you trust before you force yourself back into the fight.",
   },
   {
     chapter: 2,
@@ -49,7 +49,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Ask one honest question of someone you trust, instead of arguing with your own confusion.",
     meaning:
-      "Discipleship begins where self-defense ends. The Gita can speak only when we become students.",
+      "When you are torn between two duties — a parent, a job, a partner — arguing with yourself rarely helps. The turning point is asking for help without rehearsing your defense. One honest “I do not know what is right” is already a choice.",
   },
   {
     chapter: 2,
@@ -63,7 +63,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Notice where grief is wearing the costume of a clever opinion.",
     meaning:
-      "Wisdom is not a speech. It is the refusal to mourn what was never ours to keep as a possession.",
+      "Grief often shows up as a sharp opinion: about a breakup, a layoff, a friend’s decision. The speech sounds wise; the heart is still bargaining. Let yourself feel the loss without turning it into a lecture that keeps everyone, including you, at arm’s length.",
   },
   {
     chapter: 2,
@@ -77,7 +77,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Meet one change of season in your body or work without panicking that you have ended.",
     meaning:
-      "The self is not any one age of the body. What passes is a stage, not the one who is passing through.",
+      "A role ends — student, job title, the youngest in the family — and it can feel like you are disappearing. You have already lived several lives in one body. The person who loved, worked, and worried is still here; only the costume changed.",
   },
   {
     chapter: 2,
@@ -91,7 +91,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Let today’s heat or slight pass through without making it a verdict on the whole life.",
     meaning:
-      "Endurance is not numbness. It is staying present while pleasure and pain come and go.",
+      "A tense email, a cold shoulder, a burst of good news: they arrive and they leave. If you build a whole evening around one sting or one compliment, the day owns you. Feel it, then return to the next ordinary task.",
   },
   {
     chapter: 2,
@@ -105,7 +105,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "When fear of loss spikes, remember what in you is not on the bargaining table.",
     meaning:
-      "The Gita does not deny death. It denies that death is the last word about who you are.",
+      "Worry loves to whisper that one mistake, one diagnosis, or one rejection is the end of you. Something in you has already survived every earlier version of that fear. Act carefully, but do not treat the scare as your whole name.",
   },
   {
     chapter: 2,
@@ -119,7 +119,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Release one worn identity today the way you would fold a frayed shirt.",
     meaning:
-      "Death is pictured as a change of clothes. Clinging to one garment starts to look strangely small.",
+      "Leaving a relationship, a city, or a career can feel like dying. It is closer to changing clothes that no longer fit. Honor what the old life gave you, then put on what this season actually requires.",
   },
   {
     chapter: 2,
@@ -133,7 +133,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Stop bargaining with a fact you cannot reverse. Meet it, then do the next kind thing.",
     meaning:
-      "Some conditions are not puzzles. They are the ground on which a human life has to stand.",
+      "Some facts will not negotiate: a deadline, an aging parent, a door that closed. Spending the morning bargaining with them only adds a second pain. Meet the given, then do the next kind, useful thing.",
   },
   {
     chapter: 2,
@@ -147,7 +147,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Do the work that is yours today. Do not spend the morning managing its reviews.",
     meaning:
-      "Freedom here is attention: claim the act, release the fruit, and do not hide in inaction.",
+      "You can write the proposal, make the call, cook the meal. You cannot control the reply, the promotion, or whether anyone notices. Do the work cleanly and stop rehearsing the review in your head. That is how a day stays yours.",
   },
   {
     chapter: 2,
@@ -161,7 +161,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Treat success and snag as the same weather. Keep doing the task cleanly.",
     meaning:
-      "Yoga is evenness inside action. Outcome may swing; the mind does not have to swing with it.",
+      "A meeting goes well; the next one does not. If your mood becomes the scoreboard, your partner and your colleagues will feel it. Stay in the task. Evenness is not indifference — it is refusing to make other people ride your highs and crashes.",
   },
   {
     chapter: 2,
@@ -175,7 +175,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Drop the inner scoreboard after one finished task. Let the work be the skill.",
     meaning:
-      "Skill is not cleverness. It is acting without the snarl of self-praise and self-blame.",
+      "After you send the work, notice the itch to check who liked it or who is angry. Skill here is finishing and letting the result belong to the world. Praise and blame both fade; the quality of how you showed up remains.",
   },
   {
     chapter: 2,
@@ -189,7 +189,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "When a win or a sting arrives, wait one breath before you become it.",
     meaning:
-      "Steadiness is a climate, not a pose: less jerked by gain, less defined by loss.",
+      "A delayed text or a small win can hijack an afternoon. The practice is a pause long enough that the feeling is information, not a command. People around you need you present, not owned by the last notification.",
   },
   {
     chapter: 2,
@@ -203,7 +203,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Let a craving enter and leave without sending the whole day after it.",
     meaning:
-      "Peace is not an empty life. It is a fullness that can receive currents and remain.",
+      "Cravings walk in all day: to buy, to scroll, to win an argument, to be reassured. You do not have to empty your life of desire. You can let the wave arrive, feel it, and stay at the table with the people who are actually there.",
   },
   {
     chapter: 3,
@@ -217,7 +217,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Do the required next act — a meal, a message, a duty — rather than disappearing.",
     meaning:
-      "Withdrawal that still uses a body is not freedom. Life asks for motion, not a freeze.",
+      "When anxiety is high, disappearing into the couch or the feed looks like rest and is often another kind of freeze. Make the bed, answer the one email, walk the dog. Small required acts keep a body in the world.",
   },
   {
     chapter: 3,
@@ -231,7 +231,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Finish one necessary task without using it to prove your worth.",
     meaning:
-      "The highest work is unclinging work: done because it is to be done, not as a trophy.",
+      "Do the necessary work without using it to prove you are a good child, partner, or employee. The dish washed because it needed washing is lighter than the dish washed for applause. That lightness is what other people actually feel.",
   },
   {
     chapter: 3,
@@ -245,7 +245,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Someone is watching how you stand today. Make the pattern worth copying.",
     meaning:
-      "Private despair has public weather. A life in crisis becomes a standard, for good or ill.",
+      "Children, juniors, and quieter friends copy how you handle pressure more than they copy your advice. If you snap, hide, or cut corners, that becomes the weather of the room. Stand the way you would want them to stand next week.",
   },
   {
     chapter: 3,
@@ -259,7 +259,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "When pride says “I did this,” remember the many hands and conditions inside the act.",
     meaning:
-      "Responsibility remains. The boast does not. Nature is moving; ego signs the painting.",
+      "A successful project had teammates, timing, and luck inside it. So did a failure. Keep responsibility — apologize, fix, try again — but drop the story that you alone authored the whole thing. That story is exhausting to live with, and unfair to others.",
   },
   {
     chapter: 3,
@@ -273,7 +273,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Stay with your own imperfect work instead of imitating someone else’s cleaner path.",
     meaning:
-      "Borrowed vocations are a kind of fear. Better a true dharma done clumsily than a false one done well.",
+      "It is tempting to live someone else’s cleaner life: their career, their marriage, their morning routine. Imperfect work that is actually yours beats a borrowed path done well. The danger of imitation is waking up respected and homesick for yourself.",
   },
   {
     chapter: 4,
@@ -287,7 +287,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Where something fair is thinning today, bring yourself — not a lecture — to that spot.",
     meaning:
-      "The real does not abandon a world when order slips. Presence is how dharma returns.",
+      "When a workplace gets cruel or a family habit turns dishonest, waiting for a hero is a way to stay seated. Bring yourself to the thin place: a true sentence, a boundary, a refusal to pile on. Order returns in small human arrivals.",
   },
   {
     chapter: 4,
@@ -301,7 +301,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Protect one good thing in reach. Do not wait for a cosmic rescue to do a human one.",
     meaning:
-      "Incarnation, here, is purpose: guard the good, refuse the cruel, restore the measure.",
+      "You will not fix the news today. You can protect one person in reach — a colleague being talked over, a child who needs you present, a friend who is slipping. Courage here is local. Start with the room you are actually in.",
   },
   {
     chapter: 4,
@@ -315,7 +315,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Look at today’s busyness and ask whether it is motion or merely unrest.",
     meaning:
-      "Stillness can be a deed, and hurry can be a hiding. Wisdom reads the quality, not the pose.",
+      "Busy weeks can hide a stalled heart; quiet weekends can hide frantic rumination. Ask whether today’s motion is work or just unrest. Rest that repairs you is an action. Hurry that avoids a conversation is not.",
   },
   {
     chapter: 4,
@@ -329,7 +329,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Offer one ordinary act as if the doer, the gift, and the fire were not three prizes.",
     meaning:
-      "When work is not grasped as a personal monument, the act itself becomes worship.",
+      "Cooking for someone, sending a careful note, sitting through a dull meeting: if you stop using those acts as proof of your importance, they become offerings. The people you serve feel the difference between a gift and a performance.",
   },
   {
     chapter: 4,
@@ -343,7 +343,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Stay with one true insight long enough for it to clean something in you.",
     meaning:
-      "Knowledge here is not trivia. It is a slow clarifying that practice finds in the self.",
+      "One true insight — “I am lonely,” “this job is finished,” “I was unkind” — can clean more than a week of distraction. Stay with it long enough to change one habit. Knowledge that never reaches the calendar is only a mood.",
   },
   {
     chapter: 4,
@@ -357,7 +357,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Keep faith with a practice for this one day. Peace follows seeing, not the other way round.",
     meaning:
-      "Faith is not a substitute for vision. It is staying near until vision arrives.",
+      "Trust a small practice for this one day: a walk, a call, a page of honest work. Peace usually follows after you have stayed, not before. Faith here is showing up before you feel ready, the way you show up for people you love.",
   },
   {
     chapter: 5,
@@ -371,7 +371,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Do the messy work, then step back clean — like water leaving a lotus leaf.",
     meaning:
-      "You can live in the world without letting the world write its name on you.",
+      "You can sit in a tense meeting or a messy kitchen and leave without carrying the stain home. Do the hard thing, then wash your hands of the drama. Your partner does not need the whole office dumped on the dinner table.",
   },
   {
     chapter: 5,
@@ -385,7 +385,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Look at someone easy to rank below you and refuse the ranking.",
     meaning:
-      "Equal seeing is not blindness. It is declining to let status decide who has a self.",
+      "Status is loud: titles, grades, whose child is thriving. The person serving you coffee and the person interviewing you have the same need to be seen. Equal seeing in daily life looks like courtesy that does not change with the org chart.",
   },
   {
     chapter: 6,
@@ -399,7 +399,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Speak to yourself today as a friend would, not as a prosecutor.",
     meaning:
-      "Rescue and ruin start in the same place: how you treat your own mind.",
+      "The voice in your head after a mistake will either help you repair or keep you small. Talk to yourself the way you would talk to a friend who called at 11 p.m. You cannot outsource that tone. It sets the weather for everyone you live with.",
   },
   {
     chapter: 6,
@@ -413,7 +413,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "When the inner voice turns against you, do not believe it is the only witness.",
     meaning:
-      "An untrained mind is not neutral. Yoga is making that voice a companion instead of a foe.",
+      "An untrained mind will pick a fight with your partner using your own memories as ammunition. When the inner prosecutor starts, do not hand it the phone. Delay the message. The friend you need may be you, five minutes later.",
   },
   {
     chapter: 6,
@@ -427,7 +427,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Each time the mind wanders, bring it back once. That return is the practice.",
     meaning:
-      "Meditation in the Gita is not a blank. Wandering is expected. The work is the coming home.",
+      "You will drift — into the feed, into a grudge, into tomorrow’s meeting. The practice is not a blank mind. It is noticing the wander and coming back to the person in front of you, or the sentence you were writing. Return is the whole skill.",
   },
   {
     chapter: 6,
@@ -441,7 +441,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Look for the sacred in one ordinary place you usually rush past.",
     meaning:
-      "Union is mutual finding: the world is not emptied of God, and you are not lost to it.",
+      "If the sacred is only in a temple or a quiet hour, ordinary Tuesday will feel empty. Look for it in the commute, the shared sink, the colleague who told the truth. People are harder to dismiss when you stop treating the world as a waiting room.",
   },
   {
     chapter: 6,
@@ -455,7 +455,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Do not wait to feel calm before you practice. Practice is how the restless mind is held.",
     meaning:
-      "Krishna agrees the mind is hard. He refuses the conclusion that it cannot be trained.",
+      "You do not need a calm mind to begin. You need a mind willing to practice while it is noisy. Two minutes of return, again tomorrow, changes more relationships than waiting to “feel like yourself” first.",
   },
   {
     chapter: 7,
@@ -469,7 +469,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Hold today’s many tasks as beads on one thread, not as rival gods.",
     meaning:
-      "Diversity is not denied. It is strung. The many shine because they share one line.",
+      "The inbox, the kids, the aging parent, the rent: they feel like rival gods. Hold them as beads on one day, not as a war for your last nerve. When everything is one thread, you can put one bead down without dropping the whole necklace.",
   },
   {
     chapter: 7,
@@ -483,7 +483,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Let one moment of “this too is that” soften a hard division you are carrying.",
     meaning:
-      "The rare seeing is simple: after many lives of splitting, the field is recognized as one.",
+      "Most of us spend years splitting life into sacred and wasted, success and shame, us and them. Soften one hard division you are carrying — about a sibling, a coworker, a younger you. Seeing “this too” is how a long life gets simpler, not smaller.",
   },
   {
     chapter: 8,
@@ -497,7 +497,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Practice the thought you would want at the end — now, while the day is ordinary.",
     meaning:
-      "The last thought is a summary of a life. What you love in small hours is what remains.",
+      "What you rehearse all day is what you will have at the hard moments: a hospital corridor, a goodbye, a night of fear. Practice the thought you would want then — gratitude, a name, a simple prayer — while the kettle boils. Ordinary hours train the last ones.",
   },
   {
     chapter: 8,
@@ -511,7 +511,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Keep the heart turned while the hands do today’s fight. Remembrance is not an exit.",
     meaning:
-      "“Remember me and fight” is one instruction. Duty and devotion are meant to share a body.",
+      "You can remember what matters and still send the invoice, still pick up the child, still have the hard talk. Devotion that leaves the dishes and the job behind is only another escape. Keep the heart turned and the hands in the day.",
   },
   {
     chapter: 9,
@@ -525,7 +525,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Give the day’s worry of provision a shorter leash. Do the next faithful act.",
     meaning:
-      "Trust here is not laziness. It is offering attention, and letting care be carried with you.",
+      "Worry about money, health, and the people you love will visit. Do the next faithful act — the application, the appointment, the honest budget — and give the rest a shorter leash. Trust is not pretending there is no risk. It is refusing to live only in the risk.",
   },
   {
     chapter: 9,
@@ -539,7 +539,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Offer something small and sincere — a pause, a glass of water, a kind word.",
     meaning:
-      "The Gita lowers the price of approach. The gift is the turning, not the gold.",
+      "You do not need a grand gesture to repair a friendship or mark a morning. A glass of water brought without being asked, a short true message, five quiet minutes: small sincere things land. People remember the turning, not the price of the gift.",
   },
   {
     chapter: 9,
@@ -553,7 +553,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Turn one ordinary act — eating, sending, walking — into an offering.",
     meaning:
-      "Worship is not extra ritual piled on the day. It is a new destination for the same acts.",
+      "Eating lunch, answering Slack, walking the dog can all be offered instead of grabbed. The day does not need more rituals. It needs a different destination for the same acts, so work and love stop being only about you.",
   },
   {
     chapter: 9,
@@ -567,7 +567,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Pick a single center for the next hour: thought, love, and work facing the same way.",
     meaning:
-      "The path gathers into orientation. Four gestures, one turning.",
+      "Pick one center for the next hour — the child, the draft, the person you wronged — and let thought, speech, and hands face the same way. Scattered care feels like caring and often helps no one. Orientation is kindness with a spine.",
   },
   {
     chapter: 10,
@@ -581,7 +581,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Before looking for God in the sky, sit still enough to notice the one in the heart.",
     meaning:
-      "Glory begins inward. The first vibhuti is the self already seated in every chest.",
+      "Before you look for meaning in a promotion or a perfect weekend, sit still enough to notice the one who is already sitting in your chest. Decisions made from that quieter place land differently on the people who have to live with them.",
   },
   {
     chapter: 10,
@@ -595,7 +595,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "When you meet excellence today, read it as a spark, not as a rival altar.",
     meaning:
-      "Wonder is not emptied from the world. Strength and beauty are hints of a larger splendor.",
+      "When a colleague shines or a stranger is beautiful or strong, you can envy them or you can read a spark. Envy makes the room smaller. Wonder keeps you from turning other people’s gifts into a verdict on your life.",
   },
   {
     chapter: 11,
@@ -609,7 +609,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Name one outcome you cannot command. Let Time be larger than your panic about it.",
     meaning:
-      "The terrible vision is also a mercy: some endings are already in motion. You are not their author.",
+      "Some outcomes are larger than your panic: an industry shift, an illness, a child’s adulthood. You are not the author of time. Name what you cannot command, then spend your energy on the inch that is still yours — a call, a will, a kindness.",
   },
   {
     chapter: 11,
@@ -623,7 +623,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Stand up as an instrument. Do the next right act without needing to own the universe.",
     meaning:
-      "After awe, the instruction is not limpness. It is to become a hand, not a god.",
+      "After the shock, stand up as a hand, not as the universe. File the form, show up to the appointment, tell the truth in the meeting. Being an instrument is not passivity. It is doing the next right act without needing to own the ending.",
   },
   {
     chapter: 12,
@@ -637,7 +637,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Meet one person without the inner word “mine.” Try friendliness before judgment.",
     meaning:
-      "Love of God, in this chapter, has a human face: less hate, more mercy, a lighter ego.",
+      "Love that never reaches the kitchen or the group chat is only a mood. Try one hour without the inner word “mine”: not my win, not my slight. Friendliness before judgment is how a house stays livable.",
   },
   {
     chapter: 12,
@@ -651,7 +651,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Be someone the room does not have to brace for — and do not brace against the room.",
     meaning:
-      "Dearness looks like non-disturbance both ways: you do not make the world flinch.",
+      "Be someone the room does not have to brace for. Also, do not brace against every mood in the room. Relationships get easier when you stop both performing and flinching. Calm is a gift you give other nervous systems.",
   },
   {
     chapter: 13,
@@ -665,7 +665,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "See the same dignity in a stranger that you want seen in yourself.",
     meaning:
-      "Bodies perish. The one standing equally in them does not. That is what seeing means.",
+      "The person who cut you off, the relative you avoid, the stranger in the waiting room: same dignity you want for yourself. You do not have to like them. You do have to stop treating their body as disposable scenery.",
   },
   {
     chapter: 14,
@@ -679,7 +679,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Notice which strand is coloring you today: clear, restless, or heavy. Do not pretend otherwise.",
     meaning:
-      "Even the deathless self, in a body, is tinted. Naming the tint is the beginning of freedom.",
+      "Some days you are clear, some days restless, some days heavy as wet cloth. Do not pretend otherwise, and do not make big relationship or money choices from the heavy day if you can wait. Naming the weather is how you stop blaming the people in the house for your climate.",
   },
   {
     chapter: 15,
@@ -693,7 +693,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "You are not a stray spark. Treat yourself, and others, as already related to the source.",
     meaning:
-      "The living being is called a portion, not a mistake — more than the senses it currently tows.",
+      "You are not a stray accident, and neither is the difficult person across from you. Treat both of you as already related to something larger than the argument. That does not excuse harm. It makes repair thinkable.",
   },
   {
     chapter: 15,
@@ -707,7 +707,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "When memory or insight arrives unearned, thank the one seated in the heart.",
     meaning:
-      "Inner life is not a sealed room. Remembering and forgetting are movements of a deeper guest.",
+      "A memory of someone you love, or a sudden knowing that you should call, often arrives unearned. Thank it and act while it is warm. Forgetting is part of being human; answering the guest in the heart is a choice.",
   },
   {
     chapter: 16,
@@ -721,7 +721,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Catch desire, anger, or greed at the door before it names the afternoon.",
     meaning:
-      "These three are not moods to decorate. They are gates that burn the person from inside.",
+      "Desire, anger, and greed will knock: one more drink, a cruel reply, a purchase to soothe status. Catch them at the door before they name the afternoon and the people who have to share it with you. Those three burn rooms down from the inside.",
   },
   {
     chapter: 16,
@@ -735,7 +735,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Measure one choice against a larger teaching than today’s mood.",
     meaning:
-      "Impulse is a poor compass. Shastra is the inherited ruler that sorts act from harm.",
+      "Mood is a poor compass for a resignation, a confession, or a late-night text. Measure the choice against a larger teaching than how you feel at 11 p.m. — a value you would still respect at breakfast. Impulse is loud. Wisdom is usually slower.",
   },
   {
     chapter: 18,
@@ -749,7 +749,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Worship with the job that is already in your hands, not the one you wish you had.",
     meaning:
-      "Fulfillment is offering one’s own work to the source from which all work rises.",
+      "You do not need a holier job to live a dedicated life. Offer the work that is already in your hands: the spreadsheet, the shift, the care of a parent. Fulfillment is rarely a different career. It is a different way of holding this one.",
   },
   {
     chapter: 18,
@@ -763,7 +763,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Sit once today as if the Lord were already in the chest, turning the day from within.",
     meaning:
-      "The machine image is intimate, not cruel: the heart is not empty. Someone is already home.",
+      "Sit once today as if someone wiser were already in the chest, turning the day from within. That picture can soften a controlling streak — in parenting, in management, in love. You are responsible. You are not the only one home.",
   },
   {
     chapter: 18,
@@ -777,7 +777,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "Hear the day’s teaching as a promise to a friend, not only as metaphysics.",
     meaning:
-      "Near the end, Krishna makes it personal: you are dear. The path is a vow, not a puzzle.",
+      "Near the end of a long teaching, the point is personal: you are wanted, not only instructed. Hear that in a friendship, a marriage, a faith. People change more from being dear than from being corrected.",
   },
   {
     chapter: 18,
@@ -791,7 +791,7 @@ export const verses: GitaVerse[] = [
     relevance:
       "When duty knots itself past bearing, take refuge first. Then stand.",
     meaning:
-      "After every argument about dharma, the last word is come to me — and do not grieve.",
+      "When duties knot past bearing — work versus family, two promises you cannot both keep — take refuge first. Put the panic down. Then stand and choose. Grief is allowed. You do not have to carry every law you were handed.",
   },
   {
     chapter: 18,
@@ -805,6 +805,6 @@ export const verses: GitaVerse[] = [
     relevance:
       "Keep teacher and student in the same frame today: wisdom beside the one willing to stand.",
     meaning:
-      "The book closes as it opened: a witness. Where those two are together, rightness holds.",
+      "A life goes well where a clear teaching and a willing pair of hands stay in the same frame: a mentor and a student, a partner who tells the truth and one who will act. Keep those two together today. Rightness is rarely a solo performance.",
   },
 ];
