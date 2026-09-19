@@ -4,9 +4,9 @@ A small web app that shows one Bhagavad Gita verse each calendar day: Sanskrit, 
 
 The verse is chosen from a bundled collection by local calendar day, so the same date always shows the same verse. There is no account, database, or backend.
 
-Live GitHub Pages URL after you enable Pages:
+Live GitHub Pages URL after Pages is enabled and the deploy workflow succeeds:
 
-[https://sahil-sagar.github.io/GitaVerseofDay/](https://sahil-sagar.github.io/GitaVerseofDay/)
+[https://sagarsahil.github.io/GitaVerseofDay/](https://sagarsahil.github.io/GitaVerseofDay/)
 
 ## Run locally
 
@@ -37,48 +37,39 @@ Use `GITHUB_PAGES=true npm run build` if you want a production build with the `/
 
 This project is already set up for GitHub Pages as a static export. You do not need Vercel or a Node host.
 
-### 1. Create the GitHub repository
+The public GitHub repo is [sagarsahil/GitaVerseofDay](https://github.com/sagarsahil/GitaVerseofDay).
 
-On GitHub, create a repository named `GitaVerseofDay` under the `sahil-sagar` account if it does not exist yet. A public repo is simplest for Pages.
+### 1. Add GitHub as a remote and push
 
-### 2. Add GitHub as a remote and push
-
-From this project:
+From this project, if the `github` remote is not already set:
 
 ```bash
-git remote add github https://github.com/sahil-sagar/GitaVerseofDay.git
+git remote add github https://github.com/sagarsahil/GitaVerseofDay.git
 git push -u github main
 ```
 
-If your GitHub remote should be the primary `origin` instead:
+SSH:
 
 ```bash
-git remote add origin https://github.com/sahil-sagar/GitaVerseofDay.git
-git push -u origin main
-```
-
-SSH works the same way:
-
-```bash
-git remote add github git@github.com:sahil-sagar/GitaVerseofDay.git
+git remote add github git@github.com:sagarsahil/GitaVerseofDay.git
 git push -u github main
 ```
 
-Pushing `main` is what publishes the site. Feature-branch work can go through a pull request; the deploy workflow runs on `main`.
+Pushing `main` builds the site. The deploy step only succeeds after Pages is enabled (next section).
 
-### 3. Enable Pages from GitHub Actions
+### 2. Enable Pages from GitHub Actions
 
-In the GitHub repo:
+A push alone is not enough. The first deploy fails with 404 until Pages exists on the repo.
 
-1. Open **Settings → Pages**.
+1. Open [Settings → Pages](https://github.com/sagarsahil/GitaVerseofDay/settings/pages).
 2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-3. Wait for the **Deploy GitHub Pages** workflow on `main` to finish.
+3. Re-run the failed **Deploy GitHub Pages** workflow: [Actions](https://github.com/sagarsahil/GitaVerseofDay/actions) → the latest run → **Re-run jobs**. You do not need to push new app code.
 
 The workflow in `.github/workflows/deploy-github-pages.yml` builds the static export with `basePath` `/GitaVerseofDay` and deploys the `out/` folder.
 
 After the first successful deploy, the site is at:
 
-`https://sahil-sagar.github.io/GitaVerseofDay/`
+`https://sagarsahil.github.io/GitaVerseofDay/`
 
 If assets 404, confirm the repository name is exactly `GitaVerseofDay` and that Pages is using GitHub Actions rather than a `/docs` folder.
 
