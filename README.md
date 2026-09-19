@@ -77,4 +77,6 @@ If assets 404, confirm the repository name is exactly `GitaVerseofDay` and that 
 
 Verses live in `data/verses.ts`. The app picks one at random in the browser after the page loads, and remembers the last verse in `localStorage` so a refresh does not show the same one twice in a row. Because GitHub Pages is a static host, there is no server-side daily lock.
 
+On a phone, open the browser share or menu and choose **Add to Home Screen** so the page sits next to your other apps.
+
 Sanskrit is the traditional public-domain Gita text. The English lines are original paraphrases written for this app, not a published translator’s edition.
