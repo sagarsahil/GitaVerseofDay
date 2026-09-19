@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Geist, Geist_Mono, Noto_Serif_Devanagari } from "next/font/google";
 
 import { SceneBackdrop } from "@/components/scene-backdrop";
+import { siteUrl } from "@/lib/site";
 
 import "./globals.css";
 
@@ -28,6 +29,7 @@ const devanagari = Noto_Serif_Devanagari({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Gita Verse of the Day",
   description:
     "A Bhagavad Gita verse with Sanskrit, English translation, and a short reading for this moment.",

@@ -4,9 +4,9 @@ A small web app that shows a Bhagavad Gita verse whenever you open or refresh th
 
 The collection is the complete Gita — all 700 verses across 18 chapters (chapter 13 has 34 verses). Each refresh picks a new verse and avoids immediately repeating the last one. There is no account, database, or backend. On a phone, use Add to Home Screen to keep the page one tap away.
 
-Live GitHub Pages URL after Pages is enabled and the deploy workflow succeeds:
+Live site:
 
-[https://sagarsahil.github.io/GitaVerseofDay/](https://sagarsahil.github.io/GitaVerseofDay/)
+[https://www.gitaverseofday.com](https://www.gitaverseofday.com)
 
 ## Run locally
 
@@ -30,8 +30,6 @@ The export lands in `out/`. Preview it with any static server, for example:
 ```bash
 npx --yes serve out -p 43127
 ```
-
-Use `GITHUB_PAGES=true npm run build` if you want a production build with the `/GitaVerseofDay` base path that GitHub Pages uses.
 
 ## Publish to GitHub Pages
 
@@ -65,13 +63,13 @@ A push alone is not enough. The first deploy fails with 404 until Pages exists o
 2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
 3. Re-run the failed **Deploy GitHub Pages** workflow: [Actions](https://github.com/sagarsahil/GitaVerseofDay/actions) → the latest run → **Re-run jobs**. You do not need to push new app code.
 
-The workflow in `.github/workflows/deploy-github-pages.yml` builds the static export with `basePath` `/GitaVerseofDay` and deploys the `out/` folder.
+The workflow in `.github/workflows/deploy-github-pages.yml` builds the static export at the site root and deploys the `out/` folder. A `CNAME` file in `public/` keeps GitHub Pages pointed at `www.gitaverseofday.com`.
 
-After the first successful deploy, the site is at:
+After a successful deploy, the site is at:
 
-`https://sagarsahil.github.io/GitaVerseofDay/`
+`https://www.gitaverseofday.com`
 
-If assets 404, confirm the repository name is exactly `GitaVerseofDay` and that Pages is using GitHub Actions rather than a `/docs` folder.
+If assets 404, confirm Pages is using GitHub Actions rather than a `/docs` folder, and that the custom domain in [Settings → Pages](https://github.com/sagarsahil/GitaVerseofDay/settings/pages) is `www.gitaverseofday.com`.
 
 ## How a verse is chosen
 

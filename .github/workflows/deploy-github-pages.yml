@@ -36,8 +36,6 @@ jobs:
 
       - name: Build static site
         run: npm run build
-        env:
-          GITHUB_PAGES: "true"
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
