@@ -1,23 +1,25 @@
+"use client";
+
 import { Bookmark } from "lucide-react";
 
+import { useLocale } from "@/components/locale-provider";
+
 export function BookmarkOnPhone() {
+  const { copy } = useLocale();
+
   return (
     <aside className="mt-6 rounded-xl bg-card/95 p-4 text-left ring-1 ring-primary/15 backdrop-blur-md md:hidden">
       <p className="flex items-center gap-2 text-xs font-medium tracking-[0.2em] text-primary uppercase">
         <Bookmark className="size-3.5" />
-        Bookmark on your phone
+        {copy.bookmarkTitle}
       </p>
-      <p className="mt-2 text-sm leading-relaxed text-foreground">
-        Save this page to your Home Screen. Each tap opens a new verse.
-      </p>
+      <p className="mt-2 text-sm leading-relaxed text-foreground">{copy.bookmarkBody}</p>
       <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-muted-foreground">
         <li>
-          <span className="font-medium text-foreground">iPhone:</span> tap Share,
-          then Add to Home Screen.
+          <span className="font-medium text-foreground">iPhone:</span> {copy.bookmarkIphone}
         </li>
         <li>
-          <span className="font-medium text-foreground">Android:</span> open the
-          browser menu, then Add to Home screen.
+          <span className="font-medium text-foreground">Android:</span> {copy.bookmarkAndroid}
         </li>
       </ul>
     </aside>

@@ -4,6 +4,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { Copy, Check, RotateCcw } from "lucide-react";
 
 import { verses, type GitaVerse } from "@/data/verses";
+import { insightFor } from "@/data/verse-hi";
 import {
   citation,
   formatDisplayDate,
@@ -13,6 +14,9 @@ import {
   writeLastVerseId,
 } from "@/lib/pick-verse";
 import { BookmarkOnPhone } from "@/components/bookmark-on-phone";
+import { LanguageToggle } from "@/components/language-toggle";
+import { useLocale } from "@/components/locale-provider";
+import { VerseAudio } from "@/components/verse-audio";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -86,19 +90,29 @@ export function TodayVerse() {
 }
 
 function PageFrame({ children }: { children: ReactNode }) {
+  const { copy, locale } = useLocale();
+
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col">
       <header className="mb-8 flex flex-col items-center text-center sm:mb-10">
         <LotusMark className="mb-4 h-10 w-16" />
-        <p className="text-xs font-medium tracking-[0.28em] text-primary uppercase">
-          Gita Verse of the Day
+        <LanguageToggle />
+        <p className="mt-5 text-xs font-medium tracking-[0.28em] text-primary uppercase">
+          {copy.kicker}
         </p>
-        <h1 className="font-heading mt-3 max-w-md text-3xl leading-tight text-balance text-foreground drop-shadow-[0_1px_18px_oklch(0.98_0.01_88)] sm:text-4xl">
-          A verse from the Bhagavad Gita
+        <h1
+          className={`mt-3 max-w-md text-3xl leading-tight text-balance text-foreground drop-shadow-[0_1px_18px_oklch(0.98_0.01_88)] sm:text-4xl ${
+            locale === "hi" ? "font-devanagari" : "font-heading"
+          }`}
+        >
+          {copy.title}
         </h1>
-        <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base">
-          Refresh for another of all 700 verses. Each one includes a note for
-          today and a deeper meaning for ordinary life.
+        <p
+          className={`mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base ${
+            locale === "hi" ? "font-devanagari" : ""
+          }`}
+        >
+          {copy.intro}
         </p>
       </header>
       {children}
@@ -108,6 +122,8 @@ function PageFrame({ children }: { children: ReactNode }) {
 }
 
 function LoadedVerse({ verse, openedAt }: { verse: GitaVerse; openedAt: Date }) {
+  const { copy, locale } = useLocale();
+  const insight = insightFor(verse, locale);
   const [copied, setCopied] = useState(false);
   const [copyError, setCopyError] = useState(false);
 
@@ -115,15 +131,15 @@ function LoadedVerse({ verse, openedAt }: { verse: GitaVerse; openedAt: Date }) 
     const text = [
       verse.sanskrit,
       "",
-      verse.translation,
+      insight.translation,
       "",
-      `— ${citation(verse)}`,
+      `— ${citation(verse, locale)}`,
       "",
-      "For today",
-      verse.relevance,
+      copy.forToday,
+      insight.relevance,
       "",
-      "Deeper meaning",
-      verse.meaning,
+      copy.deeperMeaning,
+      insight.meaning,
     ].join("\n");
     try {
       await navigator.clipboard.writeText(text);
@@ -135,19 +151,21 @@ function LoadedVerse({ verse, openedAt }: { verse: GitaVerse; openedAt: Date }) 
     }
   }
 
+  const insightClass = locale === "hi" ? "font-devanagari" : "";
+
   return (
     <Card className="border-none bg-card/95 shadow-[0_24px_60px_-28px_oklch(0.35_0.06_50/0.5)] ring-1 ring-primary/15 backdrop-blur-md">
       <CardHeader className="gap-3">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <p className="text-xs font-medium tracking-[0.2em] text-primary uppercase">
-              {formatDisplayDate(openedAt)}
+              {formatDisplayDate(openedAt, locale)}
             </p>
-            <CardTitle className="mt-2 font-heading text-2xl">
-              {citation(verse)}
+            <CardTitle className={`mt-2 text-2xl ${locale === "hi" ? "font-devanagari" : "font-heading"}`}>
+              {citation(verse, locale)}
             </CardTitle>
-            <CardDescription>
-              Chapter {verse.chapter}, verse {verse.verse}
+            <CardDescription className={insightClass}>
+              {copy.chapterVerse(verse.chapter, verse.verse)}
             </CardDescription>
           </div>
           <Button
@@ -158,13 +176,11 @@ function LoadedVerse({ verse, openedAt }: { verse: GitaVerse; openedAt: Date }) 
             className="self-start"
           >
             {copied ? <Check data-icon="inline-start" /> : <Copy data-icon="inline-start" />}
-            {copied ? "Copied" : "Copy verse"}
+            {copied ? copy.copied : copy.copyVerse}
           </Button>
         </div>
         {copyError ? (
-          <p className="text-sm text-destructive">
-            The verse could not be copied. You can select the text instead.
-          </p>
+          <p className="text-sm text-destructive">{copy.copyError}</p>
         ) : null}
       </CardHeader>
       <CardContent className="space-y-6">
@@ -173,36 +189,55 @@ function LoadedVerse({ verse, openedAt }: { verse: GitaVerse; openedAt: Date }) 
             {verse.sanskrit}
           </p>
         </div>
-        <p className="font-verse text-xl leading-relaxed text-pretty text-foreground sm:text-2xl">
-          {verse.translation}
+        <VerseAudio sanskrit={verse.sanskrit} />
+        <p
+          lang={locale === "hi" ? "hi" : "en"}
+          className={`text-xl leading-relaxed text-pretty text-foreground sm:text-2xl ${
+            locale === "hi" ? "font-devanagari" : "font-verse"
+          }`}
+        >
+          {insight.translation}
         </p>
         <Separator />
-        <VerseNote title="For today" body={verse.relevance} />
+        <VerseNote title={copy.forToday} body={insight.relevance} hindi={locale === "hi"} />
         <Separator />
-        <VerseNote title="Deeper meaning" body={verse.meaning} />
+        <VerseNote title={copy.deeperMeaning} body={insight.meaning} hindi={locale === "hi"} />
         <Separator />
         <div>
           <h2 className="text-xs font-medium tracking-[0.2em] text-primary uppercase">
-            Context
+            {copy.context}
           </h2>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
-            {verse.context}
+          <p
+            className={`mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base ${insightClass}`}
+          >
+            {insight.context}
           </p>
         </div>
       </CardContent>
-      <CardFooter className="text-muted-foreground">
-        A new verse on each refresh, from all {verses.length} verses of the
-        Gita.
+      <CardFooter className={`text-muted-foreground ${insightClass}`}>
+        {copy.cardFooter(verses.length)}
       </CardFooter>
     </Card>
   );
 }
 
-function VerseNote({ title, body }: { title: string; body: string }) {
+function VerseNote({
+  title,
+  body,
+  hindi,
+}: {
+  title: string;
+  body: string;
+  hindi: boolean;
+}) {
   return (
     <div>
       <h2 className="text-xs font-medium tracking-[0.2em] text-primary uppercase">{title}</h2>
-      <p className="mt-2 text-sm leading-relaxed text-pretty text-foreground sm:text-base">
+      <p
+        className={`mt-2 text-sm leading-relaxed text-pretty text-foreground sm:text-base ${
+          hindi ? "font-devanagari" : ""
+        }`}
+      >
         {body}
       </p>
     </div>
@@ -244,39 +279,32 @@ function VerseSkeleton() {
 }
 
 function EmptyState() {
+  const { copy } = useLocale();
   return (
     <Card className="border-none bg-card/95 ring-1 ring-primary/15 backdrop-blur-md">
       <CardHeader>
-        <CardTitle className="font-heading text-2xl">No verses yet</CardTitle>
-        <CardDescription>
-          The collection is empty, so there is nothing to show.
-        </CardDescription>
+        <CardTitle className="font-heading text-2xl">{copy.emptyTitle}</CardTitle>
+        <CardDescription>{copy.emptyDescription}</CardDescription>
       </CardHeader>
       <CardContent>
-        <p className="text-sm leading-relaxed text-muted-foreground">
-          Add verses to <code className="font-mono text-foreground">data/verses.ts</code>{" "}
-          and reload the page.
-        </p>
+        <p className="text-sm leading-relaxed text-muted-foreground">{copy.emptyHint}</p>
       </CardContent>
     </Card>
   );
 }
 
 function ErrorState() {
+  const { copy } = useLocale();
   return (
     <Card className="border-none bg-card/95 ring-1 ring-primary/15 backdrop-blur-md">
       <CardHeader>
-        <CardTitle className="font-heading text-2xl">
-          A verse could not be loaded
-        </CardTitle>
-        <CardDescription>
-          Something went wrong while choosing a verse.
-        </CardDescription>
+        <CardTitle className="font-heading text-2xl">{copy.errorTitle}</CardTitle>
+        <CardDescription>{copy.errorDescription}</CardDescription>
       </CardHeader>
       <CardContent>
         <Button type="button" size="lg" onClick={() => window.location.reload()}>
           <RotateCcw data-icon="inline-start" />
-          Try again
+          {copy.tryAgain}
         </Button>
       </CardContent>
     </Card>

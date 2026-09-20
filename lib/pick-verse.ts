@@ -41,8 +41,8 @@ export function writeLastVerseId(id: string): void {
   }
 }
 
-export function formatDisplayDate(date: Date): string {
-  return new Intl.DateTimeFormat("en-US", {
+export function formatDisplayDate(date: Date, locale: "en" | "hi" = "en"): string {
+  return new Intl.DateTimeFormat(locale === "hi" ? "hi-IN" : "en-US", {
     weekday: "long",
     month: "long",
     day: "numeric",
@@ -50,6 +50,9 @@ export function formatDisplayDate(date: Date): string {
   }).format(date);
 }
 
-export function citation(verse: GitaVerse): string {
+export function citation(verse: GitaVerse, locale: "en" | "hi" = "en"): string {
+  if (locale === "hi") {
+    return `भगवद्गीता ${verse.chapter}.${verse.verse}`;
+  }
   return `Bhagavad Gita ${verse.chapter}.${verse.verse}`;
 }

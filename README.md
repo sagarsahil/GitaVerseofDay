@@ -2,7 +2,7 @@
 
 A small web app that shows a Bhagavad Gita verse whenever you open or refresh the page: Sanskrit, an English rendering, the chapter and verse citation, a note for today, and a deeper meaning for ordinary life.
 
-The collection is the complete Gita — all 700 verses across 18 chapters (chapter 13 has 34 verses). Each refresh picks a new verse and avoids immediately repeating the last one. There is no account, database, or backend. On a phone, use Add to Home Screen to keep the page one tap away.
+The collection is the complete Gita — all 700 verses across 18 chapters (chapter 13 has 34 verses). Each refresh picks a new verse and avoids immediately repeating the last one. Switch the page between English and Hindi. Listen speaks the Sanskrit slowly, using a Hindi or Sanskrit voice on the device. There is no account, database, or backend. On a phone, use Add to Home Screen to keep the page one tap away.
 
 Live site:
 
@@ -77,4 +77,4 @@ Verses live in `data/verses.ts` — the full Gita, not a short anthology. The ap
 
 On a phone, open the browser share or menu and choose **Add to Home Screen** so the page sits next to your other apps.
 
-Sanskrit is the traditional public-domain Gita text. Fifty-seven well-known verses keep English notes written for this app. The rest of the English follows Shri Purohit Swami’s 1935 public-domain translation, lightly regularized. Context, “For today,” and deeper meaning on every verse are original. This is not a reprint of a modern copyrighted edition (Sivananda, Prabhupada, and similar).
+Sanskrit is the traditional public-domain Gita text. Fifty-seven well-known verses keep English notes written for this app. The rest of the English follows Shri Purohit Swami’s 1935 public-domain translation, lightly regularized. Hindi translations and notes are this app’s own rendering. Context, “For today,” and deeper meaning on every verse are original. This is not a reprint of a modern copyrighted edition (Sivananda, Prabhupada, and similar).
